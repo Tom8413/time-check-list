@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
     console.log(random);
 
     for(let i = 0; i < Object.keys(employeList).length; i++) {
-        console.log(Object.values(employeList));
+        console.log(Object.values(employeList)[i]);
     };
     //res.send(random);
 }
