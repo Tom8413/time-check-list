@@ -1,4 +1,5 @@
 const express = require('express');
+const _= require('loadash');
 
 const app = express();
 
@@ -31,6 +32,7 @@ const employeList = {
 };
 
 app.get('/', (req, res) => {
-    res.send(employeList);
+    let random = Math.random(20);
+    res.send(random);
 }
 );
