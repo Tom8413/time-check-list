@@ -32,11 +32,10 @@ const employeList = {
 };
 
 app.get('/', (req, res) => {
-    let random = _.random(absence, presence);
-    console.log(random);
-
+    
     for(let i = 0; i < Object.keys(employeList).length; i++) {
-        console.log(Object.values(employeList)[i]);
+        let random = _.random(absence, presence);
+        console.log(Object.values(employeList)[i] * random);
     };
     //res.send(random);
 }
