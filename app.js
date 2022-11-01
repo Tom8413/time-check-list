@@ -6,6 +6,7 @@ const timeRoutes = require('./routes/timeRoutes');
 
 const app = express();
 
+
 app.set('view engine', 'ejs');
 
 const dbURI = "mongodb+srv://tomasz:tomasz@nodetut.jphc8ap.mongodb.net/node-tut?retryWrites=true&w=majority";
