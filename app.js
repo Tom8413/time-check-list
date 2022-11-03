@@ -15,11 +15,6 @@ mongoose.connect(dbURI)
 .catch((err) => console.log(err));
 
 
-app.get('/', (req, res) => {
-
-    res.render('index');
-});
-
 app.use(timeRoutes);
 
 app.use((req, res) => {
